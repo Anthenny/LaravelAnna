@@ -20,9 +20,11 @@ Only develop when the containers are running, this prevents unnecessary bugs (It
 ## First time running the application
 Because u dont have the means to run the project yet we will start by installing the images services etc.
 
-remove the `.example` part of the `.env.example` file because laravel and docker-compose.yml expect this file to be here with the right configurations.
+If you are able to run the sh and make commands this will be very straight forward. Simply go to the root of the project and run `sh install.sh`. That's it.
 
-CD in to the root of the project and use `make init-build` this will trigger the app to build the containers and spin it up in dev mode.
+If you want to do it manually remove the `.example` part of the `.env.example` file because laravel and docker-compose.dev.yml expect this file to be here with the right configurations.
+
+CD in to the root of the project and use `make build` this will trigger the app to build the containers and spin it up in dev mode. If u can't run make commands go to the makefile and run the commands from the root dir of the project.
 
 After building and spinning up the containers go to http://localhost:81/ ,please give the containers the time to startup. If it's succesful u should see the homepage.
 
