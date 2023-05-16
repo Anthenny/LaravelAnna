@@ -22,6 +22,6 @@ php artisan key:generate;
 
 echo 'Building the containers right now..'
 
-docker-compose --env-file .env -f docker/docker-compose.dev.yml up -d --build --remove-orphans
+docker-compose --env-file .env -f docker-compose.dev.yml up -d --build --remove-orphans
 
 echo 'succesfully setup the project!'
